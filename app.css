@@ -1,0 +1,412 @@
+/* CSS RESET START */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET END */
+
+/* HAL PENTING */
+
+::root {
+    --primary-color: #172048;
+    --third-color: #C4C4C4;
+}
+
+header, main {
+    background-color: #F4FEFF;;
+}
+
+.btn-global {
+    background: linear-gradient(98deg, #56E0E0 0.33%, #007299 93.35%);
+    box-shadow: 0px 5.12675px 7.69013px 0px rgba(1, 115, 153, 0.20);
+    color: white;
+    border-style: none;
+
+    cursor: pointer;
+}
+
+
+/* HAL PENTING */
+
+/* HEADER START */
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 5rem;
+    padding-block: 2rem;
+}
+
+.logo-doc-color {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #50D9DB 0.21%, #007299 99.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#register-btn {
+    padding: 0.7em 1.6em;
+    border-radius: 1.2rem;
+}
+
+/* HEADER END */
+
+/* MAIN SECTION HOME RIGHT SIDE START */
+
+main {
+    padding-top: 2rem;
+    height: 70vh;
+}
+
+section.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-left-side {
+    padding-left: 5rem;
+    padding-block-start: 2rem;
+
+    flex: 1;
+}
+
+.home-left-side > .title-1 > .title-home-1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+
+.title-home-1 > .title-home-1-colorchange {
+    background: linear-gradient(90deg, #50D9DB 0.21%, #007299 99.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paragraph-1 {
+    margin-block: 1rem;
+}
+
+.paragraph-1 > .paragraph-home-1 {
+    color: var(--third-color);
+
+    line-height: 1.5rem;
+}
+
+#consultation-btn {
+    margin-block: 1rem;
+    padding: 0.9em 1.6em;
+    border-radius: 1.2rem;
+}
+
+.any-active-user {
+    margin-block-start: 2rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.any-active-number {
+    padding-block-end: 0.7rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.any-active-number-plus {
+    color: #017399;
+}
+
+/* MAIN SECTION HOME RIGHT SIDE END */
+
+
+/* MAIN SECTION HOME LEFT SIDE STARTS */
+
+.home-right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+
+#doctor-pic-bg {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+}
+
+#doctor-pic-bg img {
+    border-radius: 80px 0 0 15px;
+}
+
+#doctor-pic {
+    background: linear-gradient(98deg, #56E0E0 0.33%, #007299 93.35%);
+    border: 15px solid white;
+    border-radius: 90px 90px 15px 15px;
+    z-index: 2;
+    position: relative;
+    top: 40px;
+}
+
+#doctor-pic img {
+    background-size: cover;
+}
+
+/* MAIN SECTION HOME LEFT SIDE END */
+
+
+/* SPONSORES AND SERVICES SECTION START */
+
+.sponsores-and-services {
+    height: 90vh;
+}
+
+.sponsores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+
+    
+    margin-block: 5rem; 
+}
+
+.sponsores-img > img {
+    height: 30px;
+}
+
+.title-2 > .title-2-sponsores {
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.title-2 {
+    margin-block-end: 3rem;
+}
+
+.title-2 > .title-2-sponsores > .title-2-sponsores-color {
+    background: linear-gradient(90deg, #50D9DB 0.21%, #007299 99.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-cards-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+.services-cards {
+    width: 15rem;
+    height: 24rem;
+
+    border-radius: 1.2rem;
+    background: #f1f5f6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.services-cards-diff {
+    width: 15rem;
+    height: 24rem;
+
+    border-radius: 1.2rem;
+    background: linear-gradient(180deg, #4ED6DA 0%, #04789D 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.services-svg {
+    width: 130px;
+}
+
+.services-cards-img {
+    width: 80px;
+
+    position: absolute;
+    bottom: 215px;
+}
+
+.card-title, .card-title-diff {
+    margin-block-end: 2rem;
+}
+
+.card-title, .card-desc {
+    color: var(--primary-color);
+    padding: 0 1rem;
+}
+
+.card-title-diff, .card-desc-diff {
+    color: white;
+    padding: 0 1rem;
+}
+
+p.card-desc, p.card-desc-diff {
+    line-height: 1.2em;
+}
+
+p.card-title, p.card-title-diff {
+    font-weight: 700;
+}
+
+/* SPONSORES AND SERVICES SECTION END */
+
+/* RESPONSIVE START KALO GA MALES HEHEHE */
+
+@media screen and (max-width: 1200px) {
+    
+
+    .sponsores {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-right-side {
+        display: none;
+    }
+
+    .home-left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        padding-inline: 5rem;
+    }
+    
+    main {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        gap: 1.5rem;
+    }
+
+    .services-cards-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        gap: 5rem;
+    }
+
+    .sponsores-and-services {
+        height: 100vh;
+    }
+}
+
+/* RESPONSIVE END KALO BELOM KEISI BRARTI GUE LG MALES */
